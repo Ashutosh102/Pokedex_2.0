@@ -1,6 +1,6 @@
 # JS Assignment 3: A Basic Pokedex using [PokeAPI](https://pokeapi.co/)
 
-Deployed on Netlify: https://pokeapi-pokedex.netlify.com
+Inspired By: https://pokeapi-pokedex.netlify.com
 
 A Pokedex app that displays a list of Pokemon on the homepage, and a details section when a Pokemon is clicked. This is all done on the same page by toggling the CSS display attribute on the main sections of the page.
 
