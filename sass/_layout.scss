@@ -1,0 +1,158 @@
+/* -------------------------------------------
+Pokemon Grid (Homepage)
+---------------------------------------------- */
+.grid-wrapper {
+  margin: 0 auto;
+  width: 70vw;
+
+  h1 {
+    text-align: center;
+    font-size: 3.5em;
+  }
+}
+
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  grid-gap: 10px;
+}
+
+/* -------------------------------------------
+Pokemon Details Panel
+---------------------------------------------- */
+.details {
+  position: relative;
+  margin: 0 auto;
+  width: 40vw;
+  display: grid; // will be overwritten by display: none 
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "name     name"
+    "sprite   types"
+    "sprite   base-stats"
+    "profile  profile"
+    "evo      evo";
+
+  .back-button {
+    background: url('../assets/left-arrow.svg');
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: -200px;
+    
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.6);
+      cursor: pointer;
+    }
+  }
+
+  .pk-name {
+    grid-area: name;
+  }
+
+  .type-wrapper {
+    grid-area: types;
+
+    .type-list {
+      padding: 0;
+      display: flex;
+    }
+
+    .type {
+      margin-right: 5px;
+    }
+  }
+
+  .sprite {
+    grid-area: sprite;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .base-stats {
+    grid-area: base-stats;
+
+    .stat-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .profile {
+    grid-area: profile;
+
+    .profile-list {
+
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+      "height    category"
+      "weight    abilities";
+
+      .height {
+        grid-area: height;
+        margin-left: 5px;
+      }
+      .weight {
+        grid-area: weight;
+        margin-left: 5px;
+      }
+      .abilities {
+        grid-area: abilities;
+      }
+      .category {
+        grid-area: category;
+      }
+
+      .attr-label {
+        color: darkslategrey;
+        font-size: 15px;
+      }
+      .attr-value {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .evolution {
+    grid-area: evo;
+
+    .evolution-list {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .details {
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "name"
+      "sprite"   
+      "types"
+      "base-stats"
+      "profile"
+      "evo ";
+
+    .back-button {
+      left: 0px;
+      top: 1100px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .details {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}

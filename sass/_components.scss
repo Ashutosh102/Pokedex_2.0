@@ -1,0 +1,140 @@
+/* -------------------------------------------
+Pokemon Card (Homepage)
+---------------------------------------------- */
+.pokemon {
+
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+
+  img {
+    margin: auto;
+  }
+
+  h2 {
+    font-size: 1em;
+    text-align: center;
+  }
+}
+
+/* -------------------------------------------
+Pokemon Details Panel
+---------------------------------------------- */
+
+.details {
+
+  background-color: white;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 2em;
+  border-radius: 10px;
+
+  h1, h2 {
+    background-color: darkslategrey;
+    padding: 10px;
+    color: white;
+    font-weight: normal;
+  }
+
+  h1 {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .type {
+    border-radius: 5px;
+    padding: 3px 10px 3px 10px;
+    color: white;
+
+    font-variant: small-caps;
+    font-size: 20px;
+  }
+
+  .profile-list {
+
+    .profile-title {
+      font-weight: bold;
+    }
+
+  }
+
+  .evolution {
+    h3 {
+      text-align: center;
+      font-size: 16px;
+    }
+  }
+
+  .normal {
+    background-color: $normal;
+  }
+  
+  .fighting {
+    background-color: $fighting;
+  }
+  
+  .flying {
+    background-color: $flying;
+  }
+  
+  .poison {
+    background-color: $poison;
+  }
+  
+  .ground {
+    background-color: $ground;
+  }
+  
+  .rock {
+    background-color: $rock;
+  }
+  
+  .bug {
+    background-color: $bug;
+  }
+  
+  .ghost {
+    background-color: $ghost;
+  }
+  
+  .steel {
+    background-color: $steel;
+  }
+  
+  .fire {
+    background-color: $fire;
+  }
+  
+  .water {
+    background-color: $water;
+  }
+  
+  .grass {
+    background-color: $grass;
+  }
+  
+  .electric {
+    background-color: $electric;
+  }
+  
+  .psychic {
+    background-color: $psychic;
+  }
+  
+  .ice {
+    background-color: $ice;
+  }
+  
+  .dragon {
+    background-color: $dragon;
+  }
+  
+  .dark {
+    background-color: $dark;
+  }
+  
+  .fairy {
+    background-color: $fairy;
+  }
+}

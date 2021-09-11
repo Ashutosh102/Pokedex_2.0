@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Share+Tech+Mono&display=swap");
+/* -------------------------------------------
+VARIABLES
+---------------------------------------------- */
+/* -------------------------------------------
+RESET
+---------------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: lightblue;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Share Tech Mono", monospace;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* -------------------------------------------
+Pokemon Card (Homepage)
+---------------------------------------------- */
+.pokemon {
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.pokemon img {
+  margin: auto;
+}
+
+.pokemon h2 {
+  font-size: 1em;
+  text-align: center;
+}
+
+/* -------------------------------------------
+Pokemon Details Panel
+---------------------------------------------- */
+.details {
+  background-color: white;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 2em;
+  border-radius: 10px;
+}
+
+.details h1, .details h2 {
+  background-color: darkslategrey;
+  padding: 10px;
+  color: white;
+  font-weight: normal;
+}
+
+.details h1 {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.details .type {
+  border-radius: 5px;
+  padding: 3px 10px 3px 10px;
+  color: white;
+  font-variant: small-caps;
+  font-size: 20px;
+}
+
+.details .profile-list .profile-title {
+  font-weight: bold;
+}
+
+.details .evolution h3 {
+  text-align: center;
+  font-size: 16px;
+}
+
+.details .normal {
+  background-color: #a4acaf;
+}
+
+.details .fighting {
+  background-color: #d56723;
+}
+
+.details .flying {
+  background-color: #8e6feb;
+}
+
+.details .poison {
+  background-color: #b97fc9;
+}
+
+.details .ground {
+  background-color: #dbb54d;
+}
+
+.details .rock {
+  background-color: #a38c21;
+}
+
+.details .bug {
+  background-color: #729f3f;
+}
+
+.details .ghost {
+  background-color: #7b62a3;
+}
+
+.details .steel {
+  background-color: #9eb7b8;
+}
+
+.details .fire {
+  background-color: #fd7d24;
+}
+
+.details .water {
+  background-color: #4592c4;
+}
+
+.details .grass {
+  background-color: #9bcc50;
+}
+
+.details .electric {
+  background-color: #eed535;
+}
+
+.details .psychic {
+  background-color: #f366b9;
+}
+
+.details .ice {
+  background-color: #51c4e7;
+}
+
+.details .dragon {
+  background-color: #5e1df7;
+}
+
+.details .dark {
+  background-color: #707070;
+}
+
+.details .fairy {
+  background-color: #fdb9e9;
+}
+
+/* -------------------------------------------
+Pokemon Grid (Homepage)
+---------------------------------------------- */
+.grid-wrapper {
+  margin: 0 auto;
+  width: 70vw;
+}
+
+.grid-wrapper h1 {
+  text-align: center;
+  font-size: 3.5em;
+}
+
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  grid-gap: 10px;
+}
+
+/* -------------------------------------------
+Pokemon Details Panel
+---------------------------------------------- */
+.details {
+  position: relative;
+  margin: 0 auto;
+  width: 40vw;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "name     name" "sprite   types" "sprite   base-stats" "profile  profile" "evo      evo";
+  display: none;
+}
+
+.details .back-button {
+  background: url("../assets/left-arrow.svg");
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: -200px;
+}
+
+.details .back-button:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.details .pk-name {
+  grid-area: name;
+}
+
+.details .type-wrapper {
+  grid-area: types;
+}
+
+.details .type-wrapper .type-list {
+  padding: 0;
+  display: flex;
+}
+
+.details .type-wrapper .type {
+  margin-right: 5px;
+}
+
+.details .sprite {
+  grid-area: sprite;
+  justify-self: center;
+  align-self: center;
+}
+
+.details .base-stats {
+  grid-area: base-stats;
+}
+
+.details .base-stats .stat-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.details .profile {
+  grid-area: profile;
+}
+
+.details .profile .profile-list {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "height    category" "weight    abilities";
+}
+
+.details .profile .profile-list .height {
+  grid-area: height;
+  margin-left: 5px;
+}
+
+.details .profile .profile-list .weight {
+  grid-area: weight;
+  margin-left: 5px;
+}
+
+.details .profile .profile-list .abilities {
+  grid-area: abilities;
+}
+
+.details .profile .profile-list .category {
+  grid-area: category;
+}
+
+.details .profile .profile-list .attr-label {
+  color: darkslategrey;
+  font-size: 15px;
+}
+
+.details .profile .profile-list .attr-value {
+  font-size: 20px;
+}
+
+.details .evolution {
+  grid-area: evo;
+}
+
+.details .evolution .evolution-list {
+  display: flex;
+  justify-content: space-evenly;
+}

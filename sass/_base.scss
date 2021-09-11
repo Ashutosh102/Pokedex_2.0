@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Share+Tech+Mono&display=swap');
+
+/* -------------------------------------------
+VARIABLES
+---------------------------------------------- */
+// Global Colors
+$body-color: lightblue;
+
+// Fonts
+$header-font: 'Share Tech Mono', monospace;
+$body-font: 'Open Sans', sans-serif;
+
+// Type colors
+$normal: #a4acaf;
+$fighting: #d56723;
+$flying: #8e6feb;
+$poison: #b97fc9;
+$ground: #dbb54d;
+$rock: #a38c21;
+$bug: #729f3f;
+$ghost: #7b62a3;
+$steel: #9eb7b8;
+$fire: #fd7d24;
+$water: #4592c4;
+$grass: #9bcc50;
+$electric: #eed535;
+$psychic: #f366b9;
+$ice: #51c4e7;
+$dragon: #5e1df7;
+$dark: #707070;
+$fairy: #fdb9e9;
+
+/* -------------------------------------------
+RESET
+---------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $body-font;
+  background-color: $body-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
