@@ -1,4 +1,6 @@
 # JS Assignment 3: A Basic Pokedex using [PokeAPI](https://pokeapi.co/)
+## Demo
+![Screenshot (795)](https://user-images.githubusercontent.com/75971776/149556558-ffe61431-7785-46eb-bb04-326a5aead68d.png)
 
 Inspired By: https://pokeapi-pokedex.netlify.com
 
